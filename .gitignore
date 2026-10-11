@@ -1,0 +1,37 @@
+# 密钥与本地配置
+.env
+*.local
+
+# ★ 绑定信息：里面是**明文 API Key**，绝对不能提交
+config.json
+.codereview/
+
+# ★ 构建产物：由 build.cmd 生成，可随时重建，不入库
+CodeReview.exe
+runtime/
+obj/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent 运行时产物
+.agent_history/
+*.agent.log
+
+# 测试临时目录
+.tmp/

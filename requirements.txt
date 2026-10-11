@@ -1,0 +1,10 @@
+# 本项目刻意做到「零第三方运行时依赖」：
+#   - HTTP 调用使用标准库 urllib.request
+#   - 终端着色使用 ANSI 转义序列，无需 colorama/rich
+#   - 测试使用标准库 unittest，无需 pytest
+#
+# 因此本文件为空。Python >= 3.10 即可直接运行：
+#   python main.py --help
+#
+# 若后续希望接入官方 SDK，可自行安装（非必需）：
+# openai>=1.40.0
